@@ -21,8 +21,7 @@ class GitlabLicenses {
     }
 
     static void main(String[] args) {
-//        String configFile = 'config_gwdg_de.json'
-        String configFile = 'config_mpi-cbg.json'
+        String configFile = 'config.json'
 
         def config = new JsonSlurper().parse(new File(configFile))
         boolean getall = true //dev parameter, if false, get's only first projects "page" from api
